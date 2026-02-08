@@ -20,8 +20,8 @@ const TEXT_CARDS = [
         body: "while also getting inspiration from Dribbble."
     },
     {
-        bold: "Built using React & TailwindCSS!",
-        body: "I deployed with Vercel - See GitHub repo for details."
+        bold: "Built using React, TailwindCSS, and Vite!",
+        body: "I deployed with Vercel - Check out the GitHub repo for details."
     },
     {
         bold: "If I had more time",
