@@ -2,7 +2,7 @@ import { GitHubIcon } from "../assets/icons/GitHubIcon";
 
 const Footer = () => {
     return (
-        <div className="fixed bottom-6 right-6 flex gap-4 items-center text-right text-black">
+        <div className="fixed top-6 md:top-auto md:bottom-6 right-6 flex gap-4 items-center text-right text-black">
             <div className="flex flex-col">
                 <p>February 2026</p>
                 <p>Tam Mai x Gloss Genius</p>

@@ -12,7 +12,7 @@ function App() {
       <div className="flex">
         <Sidebar />
 
-        <main className="flex-1">
+        <main className="flex-1 md:ml-16 mb-16 md:mb-0">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/why-gloss" element={<Gloss />} />

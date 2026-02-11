@@ -29,7 +29,7 @@ const Home = () => {
     }, [image]);
 
     return (
-        <div className="py-20 pr-20 pl-36 bg-bg-teal min-h-screen flex items-center">
+        <div className="p-6 pt-24 md:py-20 md:pr-20 md:pl-36 bg-bg-teal min-h-screen flex items-center justify-center">
             <div className="max-w-xl mx-auto flex flex-col gap-4">
                 <ScrollFadeIn>
                     <div className="flex flex-col">
@@ -37,9 +37,9 @@ const Home = () => {
                         <h1>{TITLE}</h1>
                     </div>
                 </ScrollFadeIn>
-                <div className="flex gap-6">
+                <div className="flex gap-6 md:flex-row flex-col items-center">
                     <ScrollFadeIn delay={0.1}>
-                        <p className="bg-white p-6 rounded-xl w-[300px] whitespace-pre-line">{BODY_TEXT}</p>
+                        <p className="bg-white p-6 rounded-xl w-full max-w-[350px] md:w-[300px] whitespace-pre-line">{BODY_TEXT}</p>
                     </ScrollFadeIn>
                     <ScrollFadeIn delay={0.2}>
                         <AnimatePresence mode="wait">
@@ -47,7 +47,7 @@ const Home = () => {
                                 key={image}
                                 src={image}
                                 alt=""
-                                className="min-w-[300px] h-[300px] rounded-xl object-cover"
+                                className="w-full max-w-[350px] md:min-w-[300px] md:w-[300px] h-64 md:h-[300px] rounded-xl object-cover"
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
